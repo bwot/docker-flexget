@@ -8,6 +8,8 @@ RUN set -x \
     && pip install --upgrade pip \
     && pip install setuptools \
     && pip install flexget \
+    && pip uninstall -y pip \
+    && apk del py-pip \
     && mkdir /flexget
 
 CMD ["flexget", "--loglevel", "verbose", "-c", "/flexget/config.yml", "daemon", "start"]
