@@ -1,7 +1,7 @@
 # Flexget Docker image
-Flexget Docker image built on Alpine Linux.
-([Github repo](https://github.com/bwot/docker-flexget))
+Flexget Docker image built on Alpine Linux [[Github](https://github.com/bwot/docker-flexget)]
 
+[![](https://images.microbadger.com/badges/image/towb/flexget.svg)](http://microbadger.com/images/towb/flexget "Get your own image badge on microbadger.com")
 
 ### How to run
 You must at the very least mount your local `config.yml` to `/flexget/config.yml` to be able to run this.
