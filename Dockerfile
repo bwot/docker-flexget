@@ -4,7 +4,7 @@ MAINTAINER towb <me@towb.xyz>
 RUN set -x \
     && apk add --no-cache \
     ca-certificates \
-    py-pip \
+    py2-pip \
     && pip install --upgrade pip \
     && pip install setuptools \
     && pip install flexget \
