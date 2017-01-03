@@ -9,6 +9,7 @@ You must at the very least mount your local `config.yml` to `/flexget/config.yml
 This is only an example of how it could look, your config is probably different:
 ```bash
 docker run -d --name flexget \
+  -e LOGLEVEL=verbose # Loglevel is 'info' by default, see Flexget docs for other values
   # Mount your flexget config
   -v ~/.flexget/config.yml:/flexget/config.yml \
   # Mount flexget db, if you keep it local
