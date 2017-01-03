@@ -10,4 +10,6 @@ RUN set -x \
     && pip install flexget \
     && mkdir /flexget
 
-CMD ["flexget", "--loglevel", "verbose", "-c", "/flexget/config.yml", "daemon", "start"]
+ENV LOGLEVEL info
+
+CMD flexget --loglevel $LOGLEVEL -c /flexget/config.yml daemon start
