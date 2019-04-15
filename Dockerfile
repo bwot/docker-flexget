@@ -1,14 +1,15 @@
-FROM alpine:3.7
-MAINTAINER towb <me@towb.xyz>
+FROM python:3.5-alpine
 
 RUN set -x \
-    && apk add --no-cache \
-    ca-certificates \
-    py2-pip \
     && pip install --upgrade pip \
     && pip install setuptools \
     && pip install flexget \
-    && mkdir /flexget
+    && addgroup -S flexget && adduser -S -G flexget flexget \
+    && mkdir /flexget \
+    && chown flexget:flexget /flexget \
+    && chmod 775 /flexget
+
+USER flexget:flexget
 
 ENV LOGLEVEL info
 
