@@ -6,4 +6,4 @@ RUN set -x \
     && pip install flexget \
     && mkdir /flexget
 
-CMD flexget -c /flexget/config.yml daemon start
+CMD ["flexget", "-c", "/flexget/config.yml", "daemon", "start"]
