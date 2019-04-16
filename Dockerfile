@@ -5,5 +5,5 @@ RUN set -x \
     && pip install --upgrade setuptools \
     && pip install flexget \
     && mkdir /flexget
-ENV LOGLEVEL info
-CMD flexget --loglevel $LOGLEVEL -c /flexget/config.yml daemon start
+
+CMD flexget -c /flexget/config.yml daemon start
