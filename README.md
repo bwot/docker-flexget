@@ -1,7 +1,7 @@
 # Flexget Docker image
 Flexget Docker image built on Python's Alpine Linux image [[Github](https://github.com/bwot/docker-flexget)]
 
-[![](https://images.microbadger.com/badges/image/towb/flexget.svg)](http://microbadger.com/images/towb/flexget "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/towb/flexget.svg)](http://microbadger.com/images/towb/flexget "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/towb/flexget:2.1.svg)](https://microbadger.com/images/towb/flexget:2.1 "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/towb/flexget:2.1.svg)](https://microbadger.com/images/towb/flexget:2.1 "Get your own version badge on microbadger.com")
 
 ### How to run
 You must at the very least mount your local `config.yml` to `/flexget/config.yml` to be able to run this.
