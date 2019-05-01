@@ -1,16 +1,14 @@
 FROM python:3.5-alpine
 
-# hadolint ignore=DL3013
+# hadolint ignore=DL3013,DL3018
 RUN set -x \
-    && addgroup -S flexget && adduser -SD -s /bin/sh -G flexget flexget \
+    && apk add --no-cache \
+      su-exec \
+      tzdata \
     && pip install --upgrade pip \
     && pip install --upgrade setuptools \
-    && pip install flexget \
-    && mkdir /flexget \
-    && chown flexget:flexget /flexget
+    && pip install flexget
 
-USER flexget
+COPY ./entrypoint.sh /
 
-COPY ./docker-entrypoint.sh /docker-entrypoint.sh
-
-ENTRYPOINT ["/docker-entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
