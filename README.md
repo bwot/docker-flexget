@@ -1,5 +1,5 @@
 # Flexget Docker image
-Flexget Docker image built on Python's Alpine Linux image [[Github](https://github.com/bwot/docker-flexget)][[Docker Hub](https://hub.docker.com/r/towb/flexget)]
+Flexget Docker image built on Python's Alpine Linux image.
 
 [![](https://images.microbadger.com/badges/image/towb/flexget:3.0.svg)](https://microbadger.com/images/towb/flexget:3.0 "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/towb/flexget:3.0.svg)](https://microbadger.com/images/towb/flexget:3.0 "Get your own version badge on microbadger.com")
 
